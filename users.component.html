@@ -1,0 +1,10 @@
+<h2>Who to follow</h2>
+<button id="refresh">Refresh</button>
+
+<div *ngFor = 'let user of users'>   
+    <li *ngIf='user'>
+        <span>{{user.login}}</span>
+        <span> => </span>
+        <span>{{user.repos_url}}</span>
+    </li>
+</div>
